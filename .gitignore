@@ -1,5 +1,6 @@
 # Miscellaneous
 *.class
+*.lock
 *.log
 *.pyc
 *.swp
@@ -7,47 +8,65 @@
 .atom/
 .build/
 .buildlog/
-.history
+.history/
 .svn/
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# IntelliJ / Android Studio
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
+# Flutter / Dart / Pub
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
+.pub-preload-cache/
 .pub/
 /build/
 /coverage/
+coverage/
 
-# Symbolication related
+# Generated app artifacts
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
 
-# Android Studio will place build artifacts here
+# Android local/build files
+.gradle/
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# iOS/macOS local files
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/Flutter/ephemeral/
+**/ios/**/Flutter/Generated.xcconfig
+**/ios/**/Flutter/flutter_export_environment.sh
+**/ios/**/xcuserdata/
+**/macos/**/Pods/
+**/macos/**/Flutter/ephemeral/
+**/macos/**/xcuserdata/
 
 # Release signing secrets - keep these local only.
 *.jks
 *.keystore
 key.properties
+**/key.properties
 /upload-keystore.jks
 /upload_certificate.pem
 /android/upload_certificate.pem
